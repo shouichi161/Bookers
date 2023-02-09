@@ -33,3 +33,23 @@
 .start{
   margin:30px 70px;
 }
+
+.index-box{
+  margin:30px;
+}
+
+.new-box{
+  margin:30px;
+}
+
+.new-book-title{
+  margin:10px 0;
+}
+
+.new-book-body{
+  position:relative;
+}
+
+.new-submit{
+  position:absolute;
+}

@@ -1,17 +1,21 @@
 <section class="index-box">
-<h1>Books</h1>
+  <h1>Books</h1>
 
-<% @books.each do |book| %>
-
-<p>Title</p>
-<span><%=book.title %></span>
-
-<p>Body</p>
-<span><%=book.body %></span>
-
-
-<% end %>
-
+  <table cellspacing="10">
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+    <tr> 
+      <% @books.each do |book| %>
+      <td><%=book.title %></td>
+      <td><%=book.body %></td>
+      <td><%=link_to'Show',book_path(book.id) %></td>
+      <td><%=link_to'Edit',edit_book_path(book.id)%></td>
+      <td><%=link_to'Destroy',book_path(book.id),method: :delete,"data-confirm"=>"本当に削除しますか？" %></td>
+    <tr>
+      <% end %>
+    </tr>
+  </table>
 </section>
 
 

@@ -1,8 +1,16 @@
-<p class="show-text"><strong>Title<strong>:<%=@book.title %><p>
-<p class="show-text">Body:<%=@book.body %></p>
+<div class="flash-show">
+  <%=flash[:notice]%>
+</div>
+<p class="show-text">
+  <strong>Title:</strong>
+  <%=@book.title %><p>
+    
+<p class="show-text">
+  <strong>Body:</strong>
+  <%=@book.body %></p>
 
 <div class="show-link">
   <%=link_to'Edit',edit_book_path(@book.id) %>
-|
-<%=link_to'back',"/books" %>
+  |
+  <%=link_to'back',"/books" %>
 </div>

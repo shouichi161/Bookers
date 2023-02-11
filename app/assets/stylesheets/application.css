@@ -20,9 +20,12 @@
   box-sizing:border-box
 }
 
+.bookers,.title{
+  font-family:Arial Black,"メイリオ",sans-serif;
+}
+
 .top-title{
   margin:20px 30px;
-
 }
 
 .top-text{
@@ -32,6 +35,11 @@
 
 .start{
   margin:30px 70px;
+}
+
+.flash-index{
+  margin:30px 70px;
+  color:green;
 }
 
 .index-box{
@@ -46,12 +54,9 @@
   margin:10px 0;
 }
 
-.new-book-body{
-  position:relative;
-}
-
-.new-submit{
-  position:absolute;
+.flash-show{
+  margin:30px 70px;
+  color:green;
 }
 
 .show-text{
@@ -60,4 +65,20 @@
 
 .show-link{
   margin:0 30px;
+}
+
+.editing-book{
+  margin:30px;
+}
+
+.edit-title{
+  margin:10px 0;
+}
+
+.edit-body{
+  margin:5px 0;
+}
+
+.edit-submit{
+  margin:5px 0;
 }

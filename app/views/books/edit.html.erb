@@ -1,1 +1,27 @@
-edit
+<section class="editing-book">
+  <h1 class="title">Editing Book</h1>
+
+  <%=form_with model:@book do |f| %>
+  
+    <div class="edit-title">
+      <p>Title</p>
+      <%=f.text_field:title %>
+    </div>
+  
+    <div class="edit-body">
+      <p>Body</p>
+      <%=f.text_area:body %>
+    </div>
+
+    <div class="edit-submit">
+      <%=f.submit' Update Book ' %>
+    </div>
+
+  <% end %>
+
+  <%=link_to'Show',book_path %> 
+  |
+  <%=link_to'Back','/books' %>
+
+</section>
+

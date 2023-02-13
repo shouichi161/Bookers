@@ -50,6 +50,14 @@
   margin:30px;
 }
 
+.errors{
+  margin:10px 20px;
+}
+
+.errors-message{
+  margin:30px 70px;
+}
+
 .new-book-title{
   margin:10px 0;
 }
